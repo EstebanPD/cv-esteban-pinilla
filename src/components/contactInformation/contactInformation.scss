@@ -1,0 +1,18 @@
+@import "../../global.scss";
+
+.contactInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: $transition;
+    a {
+      color: initial;
+      text-decoration: underline;
+    }
+  }
+}

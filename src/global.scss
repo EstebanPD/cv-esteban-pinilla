@@ -1,0 +1,101 @@
+$background: #fff;
+$box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+
+$title-color: #276fc7;
+$subTitle-color: #292929;
+$text-color: #4f4f4f;
+
+$title-size: 2.75rem;
+$subTitle-size: 1.2rem;
+$text-size: 1rem;
+
+$transition: 0.3s;
+
+// break points ---------------------
+$bp-700: 700px;
+$bp-600: 700px;
+
+// ----------------------------------
+
+@media print {
+  @page {
+    size: A3;
+  }
+  body {
+    width: 313mm;
+    padding: 0 !important;
+
+    .actions {
+      display: none;
+    }
+
+    .app {
+      max-width: 100%;
+      width: 95%;
+      box-shadow: none;
+    }
+  }
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/Poppins-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/Poppins-Black.ttf") format("truetype");
+}

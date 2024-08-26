@@ -1,0 +1,90 @@
+@import "../../global.scss";
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1400px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+
+  @media (width <= $bp-700) {
+    flex-direction: column;
+  }
+
+  .container-switch {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .switch {
+    background-color: rgb(0 0 0 / 10%);
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    gap: 5px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 45%;
+      height: 74%;
+      display: block;
+      position: absolute;
+      background-color: $title-color;
+      top: 5px;
+      left: 5px;
+      border-radius: 20px;
+      transition: $transition ease;
+      width: 80px;
+    }
+
+    &-active {
+      &::before {
+        transform: translateX(107%);
+      }
+    }
+
+    button {
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      background-color: transparent;
+      color: black;
+      cursor: pointer;
+      width: 80px;
+      text-align: center;
+      z-index: 2;
+
+      &:disabled {
+        opacity: 1;
+        color: white;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .download {
+    border: 1px solid $title-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: $title-color;
+      color: white;
+    }
+  }
+}

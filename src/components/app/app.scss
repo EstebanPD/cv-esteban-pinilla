@@ -1,0 +1,104 @@
+@import "../../global.scss";
+
+$borders: 1px solid rgb(182 182 182 / 50%);
+
+.app {
+  max-width: 1400px;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 1.2rem;
+  box-shadow: $box-shadow;
+
+  @media (width <= $bp-600) {
+    width: 85%;
+  }
+}
+
+.columns-grid {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .column-large,
+  .column-small {
+    padding: 0.5rem;
+  }
+
+  @media (width <= $bp-700) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.direction-left {
+  grid-template-areas: "a a a a b b";
+
+  @media (width <= $bp-700) {
+    grid-template-areas:
+      "a a a a"
+      "b b b b";
+  }
+
+  .column-large {
+    grid-area: a;
+  }
+  .column-small {
+    border-left: $borders;
+    grid-area: b;
+
+    @media (width <= $bp-700) {
+      border: none;
+    }
+  }
+}
+
+.direction-right {
+  grid-template-areas: "a b b b b b";
+  border-top: $borders;
+  border-bottom: $borders;
+
+  @media (width <= $bp-700) {
+    grid-template-areas:
+      "a a a a"
+      "b b b b";
+  }
+
+  .column-large {
+    grid-area: b;
+  }
+  .column-small {
+    grid-area: a;
+  }
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-middle {
+  align-items: center;
+}
+
+.job-title {
+  font-size: $subTitle-size;
+}
+
+.profile-picture {
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+
+  @media (width <= $bp-700) {
+    margin: 0 auto;
+  }
+}
+
+.profile-description {
+  text-align: justify;
+}

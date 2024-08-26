@@ -1,0 +1,55 @@
+@import "./global.scss";
+
+body {
+  margin: 0 auto;
+  padding: 3rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: $text-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: bold;
+  line-height: normal;
+}
+
+h1,
+h2,
+h3 {
+  color: $title-color;
+}
+
+h1 {
+  font-size: $title-size;
+  @media (width <= $bp-600) {
+    font-size: calc(#{$title-size} - 1.2rem);
+  }
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  &::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 1.5rem;
+    background-color: $title-color;
+  }
+}
+
+h4 {
+  color: $subTitle-color;
+  font-size: $subTitle-size;
+}
+
+p {
+  margin: 0;
+}
