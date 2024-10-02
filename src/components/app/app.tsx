@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { basePath } from "../../constants/constant";
 import { CV_INFO_EN, CV_INFO_ES } from "../../schemas/index";
 import Actions from "../actions/actions";
 import ContactInformation from "../contactInformation/component";
@@ -46,7 +45,7 @@ const App = () => {
           <ColumnsGrid right>
             <ColumnSmall>
               <img
-                src={`${basePath}/public/profile-picture.jpg`}
+                src="profile-picture.jpg"
                 alt={info.basicInformation.fullName}
                 width="150"
                 height="150"
@@ -70,7 +69,6 @@ const App = () => {
               <Information
                 dataSkills={info.skills}
                 dataEducation={info.education}
-                dataReference={info.references}
               />
             </ColumnSmall>
           </ColumnsGrid>

@@ -102,3 +102,9 @@ $borders: 1px solid rgb(182 182 182 / 50%);
 .profile-description {
   text-align: justify;
 }
+
+.row-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -47,38 +47,38 @@ export const CV_INFO_EN = {
         ],
         remote: otherTexts.remote,
       },
-      {
-        jobTitle: otherTexts.jobTitle,
-        company: "DDB WORLDWIDE",
-        dates: "February 2023 - April 2023",
-        experience: [
-          "Developed custom animated filters for Instagram using augmented reality technologies.",
-          "Collaborated with the creative team to translate marketing concepts into engaging and interactive social media experiences.",
-          "Ensured optimization and performance of filters across various mobile devices, maintaining visual quality and smooth animation.",
-        ],
-        remote: otherTexts.remote,
-      },
-      {
-        jobTitle: otherTexts.jobTitle,
-        company: "CEINMER",
-        dates: "April 2022 - March 2023",
-        experience: [
-          "Implemented responsive design solutions that improved accessibility and usability on mobile devices.",
-          "Resolved complex code issues, reducing production errors by 15%.",
-          "Developed reusable components in React to enhance the development team's efficiency.",
-        ],
-        remote: otherTexts.remote,
-      },
-      {
-        jobTitle: otherTexts.jobTitle,
-        company: "EMERGIA",
-        dates: "September 2022 - October 2022",
-        experience: [
-          "Developed landing pages and microsites for advertising campaigns, optimizing user conversion.",
-          "Advised clients on best web development practices and technology trends.",
-        ],
-        remote: otherTexts.remote,
-      },
+      // {
+      //   jobTitle: otherTexts.jobTitle,
+      //   company: "DDB WORLDWIDE",
+      //   dates: "February 2023 - April 2023",
+      //   experience: [
+      //     "Developed custom animated filters for Instagram using augmented reality technologies.",
+      //     "Collaborated with the creative team to translate marketing concepts into engaging and interactive social media experiences.",
+      //     "Ensured optimization and performance of filters across various mobile devices, maintaining visual quality and smooth animation.",
+      //   ],
+      //   remote: otherTexts.remote,
+      // },
+      // {
+      //   jobTitle: otherTexts.jobTitle,
+      //   company: "CEINMER",
+      //   dates: "April 2022 - March 2023",
+      //   experience: [
+      //     "Implemented responsive design solutions that improved accessibility and usability on mobile devices.",
+      //     "Resolved complex code issues, reducing production errors by 15%.",
+      //     "Developed reusable components in React to enhance the development team's efficiency.",
+      //   ],
+      //   remote: otherTexts.remote,
+      // },
+      // {
+      //   jobTitle: otherTexts.jobTitle,
+      //   company: "EMERGIA",
+      //   dates: "September 2022 - October 2022",
+      //   experience: [
+      //     "Developed landing pages and microsites for advertising campaigns, optimizing user conversion.",
+      //     "Advised clients on best web development practices and technology trends.",
+      //   ],
+      //   remote: otherTexts.remote,
+      // },
       {
         jobTitle: otherTexts.jobTitle,
         company: "ARIADNA COMMUNICATIONS GROUP",
