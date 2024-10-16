@@ -28,7 +28,7 @@ export const CV_INFO_ES = {
   professionalSummary: {
     title: "Perfil Profesional",
     description:
-      "Soy un analista y desarrollador de sistemas informáticos con más de cinco años de experiencia en el desarrollo y sostenimiento de sitios web. REACT Mi trayectoria incluye el manejo eficiente de diferentes tecnologías y la implementación de soluciones innovadoras para garantizar el rendimiento óptimo y la seguridad de las plataformas digitales. Me caracterizo por mi capacidad para analizar y resolver problemas complejos, adaptándome a los requerimientos específicos de cada proyecto y siempre orientado a la mejora continua y satisfacción del cliente.",
+      "Soy un analista y desarrollador de sistemas informáticos con más de cinco años de experiencia en el desarrollo y sostenimiento de sitios web. Mi trayectoria incluye el manejo eficiente de diferentes tecnologías y la implementación de soluciones innovadoras para garantizar el rendimiento óptimo y la seguridad de las plataformas digitales. Me caracterizo por mi capacidad para analizar y resolver problemas complejos, adaptándome a los requerimientos específicos de cada proyecto y siempre orientado a la mejora continua y satisfacción del cliente.",
   },
   workExperience: {
     title: "Experiencia laboral",
