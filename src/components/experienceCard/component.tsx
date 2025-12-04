@@ -1,4 +1,4 @@
-import { ExperienceCardType } from "../../types/schema-app";
+import { ExperienceCardType } from "../../types/schema-app.type";
 import "./experienceCard.scss";
 
 type ExperienceCardProps = {

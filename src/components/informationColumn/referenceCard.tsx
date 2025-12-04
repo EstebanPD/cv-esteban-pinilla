@@ -1,4 +1,4 @@
-import { ReferencesCardType, ReferenceType } from "../../types/schema-app";
+import { ReferencesCardType, ReferenceType } from "../../types/schema-app.type";
 import ContainerGap from "./containerGap";
 
 const Card = ({ title, reference }: ReferenceType) => {

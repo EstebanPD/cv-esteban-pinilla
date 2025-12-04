@@ -1,4 +1,4 @@
-import { EducationCardType, EducationType } from "../../types/schema-app";
+import { EducationCardType, EducationType } from "../../types/schema-app.type";
 import ContainerGap from "./containerGap";
 
 const Card = ({ title, institutions, otherKnowledge }: EducationType) => {
@@ -16,9 +16,7 @@ const Card = ({ title, institutions, otherKnowledge }: EducationType) => {
           <h4>{otherKnowledge.title}</h4>
           <ul>
             {otherKnowledge.items.map((item, index) => (
-              <li key={index}>{`${item.item} ${
-                item.studying != "" ? `- ${item.studying}` : ""
-              }`}</li>
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </div>

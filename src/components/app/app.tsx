@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { CV_INFO_EN, CV_INFO_ES } from "../../schemas/index";
 import Actions from "../actions/actions";
 import ContactInformation from "../contactInformation/component";
@@ -9,10 +9,15 @@ import "./app.scss";
 import ColumnLarge from "./columnLarge";
 import ColumnsGrid from "./columnsGrid";
 import ColumnSmall from "./columnSmall";
+import RowGrid from "./rowGrid";
+import { contractTypes } from "../../constants/constant";
 
 const App = () => {
   const [language, setLanguage] = useState(true);
   const info = !language ? CV_INFO_ES : CV_INFO_EN;
+  const route = new URLSearchParams(window.location.search).get(
+    "contract-type"
+  );
 
   const onChangeLanguage = () => {
     setLanguage(!language);
@@ -22,8 +27,17 @@ const App = () => {
     window.print();
   };
 
+  const experienceFilter = info.workExperience.experience.filter(
+    (exp) => exp.type !== contractTypes.freelance
+  );
+
+  const experience =
+    route == contractTypes.freelance.toLowerCase()
+      ? info.workExperience.experience
+      : experienceFilter;
+
   return (
-    <>
+    <Fragment>
       <Actions
         data={info.actions}
         changeLanguage={onChangeLanguage}
@@ -42,26 +56,15 @@ const App = () => {
             </ColumnSmall>
           </ColumnsGrid>
 
-          <ColumnsGrid right>
-            <ColumnSmall>
-              <img
-                src="profile-picture.jpg"
-                alt={info.basicInformation.fullName}
-                width="150"
-                height="150"
-                className="profile-picture"
-              />
-            </ColumnSmall>
-            <ColumnLarge>
-              <p className="profile-description">
-                {info.professionalSummary.description}
-              </p>
-            </ColumnLarge>
-          </ColumnsGrid>
+          <RowGrid>
+            <p className="profile-description">
+              {info.professionalSummary.description}
+            </p>
+          </RowGrid>
 
-          <ColumnsGrid alignStar>
+          <ColumnsGrid left>
             <ColumnLarge>
-              {info.workExperience.experience.map((experience, index) => (
+              {experience.map((experience, index) => (
                 <ExperienceCard data={experience} key={index} />
               ))}
             </ColumnLarge>
@@ -74,7 +77,7 @@ const App = () => {
           </ColumnsGrid>
         </ContainerGap>
       </div>
-    </>
+    </Fragment>
   );
 };
 

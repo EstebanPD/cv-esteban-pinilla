@@ -21,19 +21,26 @@ export type ExperienceCardType = {
 
 // ------------------------------------------------
 
-export type SkillsType = {
+type technicalSkills = {
   title: string;
-  technical: {
+  items: {
     title: string;
     items: string[];
-  };
-  softSkills: {
-    title: string;
-    items: string[];
-  };
+  }[];
 };
 
-export type SkillsCardType = { data: SkillsType };
+type softSkills = {
+  title: string;
+  items: string[];
+};
+
+export type TSkills = {
+  title: string;
+  technicalSkills: technicalSkills;
+  softSkills?: softSkills;
+};
+
+export type SkillsCardType = { data: softSkills };
 
 // ------------------------------------------------
 
@@ -42,20 +49,13 @@ type InstitutionType = {
   description: string;
 };
 
-type OtherKnowledgeItems = {
-  item: string;
-  studying: string;
-};
-
-type OtherKnowledgeType = {
-  title: string;
-  items: OtherKnowledgeItems[];
-};
-
 export type EducationType = {
   title: string;
   institutions: InstitutionType[];
-  otherKnowledge: OtherKnowledgeType;
+  otherKnowledge: {
+    title: string;
+    items: string[];
+  };
 };
 
 export type EducationCardType = { data: EducationType };

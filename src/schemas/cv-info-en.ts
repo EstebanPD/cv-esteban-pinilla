@@ -1,7 +1,11 @@
-import { linkedinProfile, skillsTechnical } from "../constants/constant";
+import {
+  contractTypes,
+  linkedinProfile,
+  skillsTechnical,
+} from "../constants/constant";
 
 const otherTexts = {
-  jobTitle: "Front-end Developer",
+  jobTitle: "Full Stack Developer",
   remote: "Remote",
   hybrid: "Hybrid",
   studying: "Studying",
@@ -28,7 +32,7 @@ export const CV_INFO_EN = {
   professionalSummary: {
     title: "Professional Profile",
     description:
-      "I am an information systems analyst and developer with over five years of experience in the development and maintenance of websites. My career includes the efficient management of various technologies and the implementation of innovative solutions to ensure the optimal performance and security of digital platforms. I am characterized by my ability to analyze and solve complex problems, adapting to the specific requirements of each project and always oriented towards continuous improvement and customer satisfaction.",
+      "Full Stack Developer with more than 7 years of experience designing, developing, and optimizing high-performance web applications using modern technologies such as React, Next.js, Node.js, and TypeScript. I specialize in building scalable front-end architectures, integrating complex APIs, improving SEO performance, and enhancing user experience through clean, maintainable code. I have a strong ability to translate business requirements into effective technical solutions, collaborating with cross-functional teams in Agile environments and leading feature development from planning to deployment. Highly adaptable, detail-oriented, and committed to continuous improvement, automation, and best development practices, I focus on delivering reliable, efficient, and meaningful digital products that contribute directly to organizational growth and user satisfaction.",
   },
   workExperience: {
     title: "Work Experience",
@@ -46,39 +50,43 @@ export const CV_INFO_EN = {
           "Implemented SEO practices, increasing organic traffic by 20%.",
         ],
         remote: otherTexts.remote,
+        type: contractTypes.fullTime,
       },
-      // {
-      //   jobTitle: otherTexts.jobTitle,
-      //   company: "DDB WORLDWIDE",
-      //   dates: "February 2023 - April 2023",
-      //   experience: [
-      //     "Developed custom animated filters for Instagram using augmented reality technologies.",
-      //     "Collaborated with the creative team to translate marketing concepts into engaging and interactive social media experiences.",
-      //     "Ensured optimization and performance of filters across various mobile devices, maintaining visual quality and smooth animation.",
-      //   ],
-      //   remote: otherTexts.remote,
-      // },
-      // {
-      //   jobTitle: otherTexts.jobTitle,
-      //   company: "CEINMER",
-      //   dates: "April 2022 - March 2023",
-      //   experience: [
-      //     "Implemented responsive design solutions that improved accessibility and usability on mobile devices.",
-      //     "Resolved complex code issues, reducing production errors by 15%.",
-      //     "Developed reusable components in React to enhance the development team's efficiency.",
-      //   ],
-      //   remote: otherTexts.remote,
-      // },
-      // {
-      //   jobTitle: otherTexts.jobTitle,
-      //   company: "EMERGIA",
-      //   dates: "September 2022 - October 2022",
-      //   experience: [
-      //     "Developed landing pages and microsites for advertising campaigns, optimizing user conversion.",
-      //     "Advised clients on best web development practices and technology trends.",
-      //   ],
-      //   remote: otherTexts.remote,
-      // },
+      {
+        jobTitle: otherTexts.jobTitle,
+        company: "DDB WORLDWIDE",
+        dates: "February 2023 - April 2023",
+        experience: [
+          "Developed custom animated filters for Instagram using augmented reality technologies.",
+          "Collaborated with the creative team to translate marketing concepts into engaging and interactive social media experiences.",
+          "Ensured optimization and performance of filters across various mobile devices, maintaining visual quality and smooth animation.",
+        ],
+        remote: otherTexts.remote,
+        type: contractTypes.freelance,
+      },
+      {
+        jobTitle: otherTexts.jobTitle,
+        company: "CEINMER",
+        dates: "April 2022 - March 2023",
+        experience: [
+          "Implemented responsive design solutions that improved accessibility and usability on mobile devices.",
+          "Resolved complex code issues, reducing production errors by 15%.",
+          "Developed reusable components in React to enhance the development team's efficiency.",
+        ],
+        remote: otherTexts.remote,
+        type: contractTypes.freelance,
+      },
+      {
+        jobTitle: otherTexts.jobTitle,
+        company: "EMERGIA",
+        dates: "September 2022 - October 2022",
+        experience: [
+          "Developed landing pages and microsites for advertising campaigns, optimizing user conversion.",
+          "Advised clients on best web development practices and technology trends.",
+        ],
+        remote: otherTexts.remote,
+        type: contractTypes.freelance,
+      },
       {
         jobTitle: otherTexts.jobTitle,
         company: "ARIADNA COMMUNICATIONS GROUP",
@@ -91,30 +99,31 @@ export const CV_INFO_EN = {
           "Trained new team members in front-end development best practices.",
         ],
         remote: otherTexts.hybrid,
+        type: contractTypes.fullTime,
       },
     ],
   },
   skills: {
     title: "Skills",
-    technical: {
-      title: "Technical",
+    technicalSkills: {
+      title: "Technical Skills",
       items: [...skillsTechnical],
     },
-    softSkills: {
-      title: "Soft Skills",
-      items: [
-        "Effective Communication",
-        "Teamwork",
-        "Adaptability",
-        "Problem Solving",
-        "Time Management",
-        "Critical Thinking",
-        "Leadership",
-        "Empathy",
-        "Attention to Detail",
-        "Curiosity and Continuous Learning",
-      ],
-    },
+    // softSkills: {
+    //   title: "Soft Skills",
+    //   items: [
+    //     "Effective Communication",
+    //     "Teamwork",
+    //     "Adaptability",
+    //     "Problem Solving",
+    //     "Time Management",
+    //     "Critical Thinking",
+    //     "Leadership",
+    //     "Empathy",
+    //     "Attention to Detail",
+    //     "Curiosity and Continuous Learning",
+    //   ],
+    // },
   },
   education: {
     title: "Education",
@@ -124,22 +133,17 @@ export const CV_INFO_EN = {
         description:
           "Information Systems Analyst and Developer, Information Systems, Dec. 2018",
       },
-      {
-        title: "Politécnico Grancolombiano",
-        description: `Software Engineering - ${otherTexts.studying}`,
-      },
     ],
     otherKnowledge: {
       title: "Other Knowledge",
       items: [
-        { item: "Figma", studying: "" },
-        { item: "Photoshop", studying: "" },
-        { item: "Illustrator", studying: "" },
-        { item: "Adobe XD", studying: "" },
-        { item: "Spark Art Studio", studying: "" },
-        { item: "Scrum Master", studying: "" },
-        { item: "User Experience UX/UI", studying: "" },
-        { item: "Flutter", studying: otherTexts.studying },
+        "Figma",
+        "Photoshop",
+        "Illustrator",
+        "Adobe XD",
+        "Spark Art Studio",
+        "Scrum Master",
+        "User Experience UX/UI",
       ],
     },
   },
@@ -159,7 +163,7 @@ export const CV_INFO_EN = {
     ],
   },
   languages: [
-    { item: "English", percentage: 90 },
+    { item: "English", percentage: 50 },
     { item: "Spanish", percentage: 90 },
   ],
 };

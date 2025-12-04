@@ -1,38 +1,16 @@
-import { SkillsCardType } from "../../types/schema-app";
+import { SkillsCardType } from "../../types/schema-app.type";
 
-type CardProps = {
-  title?: string;
-  subTitle: string;
-  arrayString: string[];
-};
-
-const Card = ({ title, subTitle, arrayString }: CardProps) => {
+const SkillsCard = ({ data }: SkillsCardType) => {
+  const { title, items } = data;
   return (
     <div>
-      {title && <h2>{title}</h2>}
-      <h4>{subTitle}</h4>
+      <h4>{title}</h4>
       <ul>
-        {arrayString.map((item, index) => (
+        {items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
     </div>
-  );
-};
-
-const SkillsCard = ({ data }: SkillsCardType) => {
-  return (
-    <>
-      <Card
-        title={data.title}
-        subTitle={data.technical.title}
-        arrayString={data.technical.items}
-      />
-      <Card
-        subTitle={data.softSkills.title}
-        arrayString={data.softSkills.items}
-      />
-    </>
   );
 };
 

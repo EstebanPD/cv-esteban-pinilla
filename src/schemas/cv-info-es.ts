@@ -1,17 +1,14 @@
-import { linkedinProfile, skillsTechnical } from "../constants/constant";
-
-const otherTexts = {
-  jobTitle: "Desarrollador Front-end",
-  remote: "Remoto",
-  hybrid: "Híbrido",
-  studying: "Cursando",
-};
+import {
+  contractTypes,
+  linkedinProfile,
+  skillsTechnical,
+} from "../constants/constant";
 
 export const CV_INFO_ES = {
   actions: {
     text: "Cambiar idioma",
     es: "Español",
-    en: "Ingles",
+    en: "Inglés",
     download: "Descargar",
   },
   basicInformation: {
@@ -23,98 +20,103 @@ export const CV_INFO_ES = {
       text: "LinkedIn",
       url: linkedinProfile,
     },
-    jobTitle: otherTexts.jobTitle,
+    jobTitle: "Desarrollador Full Stack",
   },
   professionalSummary: {
     title: "Perfil Profesional",
     description:
-      "Soy un analista y desarrollador de sistemas informáticos con más de cinco años de experiencia en el desarrollo y sostenimiento de sitios web. Mi trayectoria incluye el manejo eficiente de diferentes tecnologías y la implementación de soluciones innovadoras para garantizar el rendimiento óptimo y la seguridad de las plataformas digitales. Me caracterizo por mi capacidad para analizar y resolver problemas complejos, adaptándome a los requerimientos específicos de cada proyecto y siempre orientado a la mejora continua y satisfacción del cliente.",
+      "Desarrollador Full Stack con más de 7 años de experiencia en el diseño, desarrollo y optimización de aplicaciones web de alto rendimiento utilizando tecnologías modernas como React, Next.js, Node.js y TypeScript. Especializado en la construcción de arquitecturas frontend escalables, integración de APIs complejas, mejora del rendimiento SEO y creación de experiencias de usuario fluidas mediante código limpio y mantenible. Poseo una sólida capacidad para traducir requisitos de negocio en soluciones técnicas efectivas, colaborando con equipos multidisciplinarios en entornos ágiles y liderando funcionalidades desde la planificación hasta el despliegue. Altamente adaptable, orientado al detalle y comprometido con la mejora continua, la automatización y las mejores prácticas de desarrollo, enfoco mi trabajo en entregar productos digitales confiables, eficientes y de alto impacto para el crecimiento organizacional y la satisfacción del usuario.",
   },
   workExperience: {
-    title: "Experiencia laboral",
+    title: "Experiencia Laboral",
     experience: [
       {
-        jobTitle: otherTexts.jobTitle,
+        jobTitle: "Desarrollador Full Stack",
         company: "MAGNETO",
-        dates: "Diciembre. 2021 - Presente",
+        dates: "Diciembre 2021 - Actualidad",
         experience: [
-          "Dirigí proyectos de desarrollo web desde la conceptualización hasta la implementación, garantizando la satisfacción del cliente.",
+          "Lideré proyectos de desarrollo web desde la conceptualización hasta la implementación, asegurando la satisfacción del cliente.",
           "Desarrollé aplicaciones web utilizando frameworks modernos como React y Next.",
-          "Implementé mejores prácticas de desarrollo, reduciendo el tiempo de entrega en un 20%.",
-          "Colaboré con equipos multidisciplinarios para crear soluciones innovadoras que cumplen con las necesidades del cliente.",
-          "Integré APIs de terceros para enriquecer la funcionalidad de las aplicaciones.",
+          "Implementé buenas prácticas de desarrollo, reduciendo el tiempo de entrega en un 20%.",
+          "Colaboré con equipos multidisciplinarios para crear soluciones innovadoras que respondieran a las necesidades del cliente.",
+          "Integré APIs de terceros para mejorar la funcionalidad de las aplicaciones.",
           "Implementé prácticas de SEO, aumentando el tráfico orgánico en un 20%.",
         ],
-        remote: otherTexts.remote,
+        remote: "Remoto",
+        type: contractTypes.fullTime,
       },
-      // {
-      //   jobTitle: otherTexts.jobTitle,
-      //   company: "DDB WORLDWIDE",
-      //   dates: "Febrero. 2023 - Abril. 2023",
-      //   experience: [
-      //     "Desarrollé filtros animados personalizados para Instagram utilizando tecnologías de realidad aumentada.",
-      //     "Colaboré con el equipo creativo para traducir conceptos de marketing en experiencias interactivas y atractivas en redes sociales.",
-      //     "Aseguré la optimización y el rendimiento de los filtros en diferentes dispositivos móviles, manteniendo la calidad visual y la fluidez de la animación.",
-      //   ],
-      //   remote: otherTexts.remote,
-      // },
-      // {
-      //   jobTitle: otherTexts.jobTitle,
-      //   company: "CEINMER",
-      //   dates: "Abril. 2022 - Marzo. 2023",
-      //   experience: [
-      //     "Implementé soluciones de diseño responsivo que mejoraron la accesibilidad y usabilidad en dispositivos móviles.",
-      //     "Resolví problemas complejos de código, reduciendo los errores en producción en un 15%.",
-      //     "Desarrollé componentes reutilizables en React para mejorar la eficiencia del equipo de desarrollo.",
-      //   ],
-      //   remote: otherTexts.remote,
-      // },
-      // {
-      //   jobTitle: otherTexts.jobTitle,
-      //   company: "EMERGIA",
-      //   dates: "Septiembre. 2022 - Octubre. 2022",
-      //   experience: [
-      //     "Desarrollé landing pages y micrositios para campañas publicitarias, optimizando la conversión de usuarios.",
-      //     "Asesoré a clientes sobre las mejores prácticas de desarrollo web y tendencias tecnológicas.",
-      //   ],
-      //   remote: otherTexts.remote,
-      // },
       {
-        jobTitle: otherTexts.jobTitle,
+        jobTitle: "Desarrollador Full Stack",
+        company: "DDB WORLDWIDE",
+        dates: "Febrero 2023 - Abril 2023",
+        experience: [
+          "Desarrollé filtros animados personalizados para Instagram utilizando tecnologías de realidad aumentada.",
+          "Colaboré con el equipo creativo para traducir conceptos de marketing en experiencias interactivas para redes sociales.",
+          "Aseguré la optimización y el rendimiento de los filtros en diversos dispositivos móviles, manteniendo la calidad visual y la fluidez de la animación.",
+        ],
+        remote: "Remoto",
+        type: contractTypes.freelance,
+      },
+      {
+        jobTitle: "Desarrollador Full Stack",
+        company: "CEINMER",
+        dates: "Abril 2022 - Marzo 2023",
+        experience: [
+          "Implementé soluciones de diseño responsivo que mejoraron la accesibilidad y usabilidad en dispositivos móviles.",
+          "Resolví problemas complejos de código, reduciendo errores en producción en un 15%.",
+          "Desarrollé componentes reutilizables en React para mejorar la eficiencia del equipo de desarrollo.",
+        ],
+        remote: "Remoto",
+        type: contractTypes.freelance,
+      },
+      {
+        jobTitle: "Desarrollador Full Stack",
+        company: "EMERGIA",
+        dates: "Septiembre 2022 - Octubre 2022",
+        experience: [
+          "Desarrollé landing pages y micrositios para campañas publicitarias, optimizando la conversión de usuarios.",
+          "Asesoré a clientes sobre buenas prácticas de desarrollo web y tendencias tecnológicas.",
+        ],
+        remote: "Remoto",
+        type: contractTypes.freelance,
+      },
+      {
+        jobTitle: "Desarrollador Full Stack",
         company: "ARIADNA COMMUNICATIONS GROUP",
-        dates: "Julio. 2018 - Diciembre. 2021",
+        dates: "Julio 2018 - Diciembre 2021",
         experience: [
           "Desarrollé interfaces de usuario interactivas, mejorando la experiencia del usuario.",
           "Colaboré con diseñadores y desarrolladores back-end para implementar soluciones web eficientes y escalables.",
-          "Optimizé el rendimiento de las aplicaciones web, reduciendo los tiempos de carga.",
+          "Optimicé el rendimiento de aplicaciones web, reduciendo los tiempos de carga.",
           "Lideré la migración de sitios web a tecnologías más modernas, aumentando la velocidad y seguridad.",
-          "Capacité a nuevos miembros del equipo en las mejores prácticas de desarrollo front-end.",
+          "Capacité a nuevos miembros del equipo en buenas prácticas de desarrollo front-end.",
         ],
-        remote: otherTexts.hybrid,
+        remote: "Híbrido",
+        type: contractTypes.fullTime,
       },
     ],
   },
   skills: {
     title: "Habilidades",
-    technical: {
-      title: "Técnicas",
+    technicalSkills: {
+      title: "Habilidades Técnicas",
       items: [...skillsTechnical],
     },
-    softSkills: {
-      title: "Habilidades blandas",
-      items: [
-        "Comunicación efectiva",
-        "Trabajo en equipo",
-        "Adaptabilidad",
-        "Resolución de problemas",
-        "Gestión del tiempo",
-        "Pensamiento crítico",
-        "Liderazgo",
-        "Empatía",
-        "Orientación al detalle",
-        "Curiosidad y aprendizaje continuo",
-      ],
-    },
+    // softSkills: {
+    //   title: "Habilidades Blandas",
+    //   items: [
+    //     "Comunicación efectiva",
+    //     "Trabajo en equipo",
+    //     "Adaptabilidad",
+    //     "Resolución de problemas",
+    //     "Gestión del tiempo",
+    //     "Pensamiento crítico",
+    //     "Liderazgo",
+    //     "Empatía",
+    //     "Atención al detalle",
+    //     "Curiosidad y aprendizaje continuo",
+    //   ],
+    // },
   },
   education: {
     title: "Educación",
@@ -122,24 +124,19 @@ export const CV_INFO_ES = {
       {
         title: "SENA, Manizales, Caldas",
         description:
-          "Analista y desarrollador de sistemas de información, Sistemas informáticos , Dic. 2018",
-      },
-      {
-        title: "Politécnico Grancolombiano",
-        description: `Ingeniería de software - ${otherTexts.studying}`,
+          "Analista y Desarrollador de Sistemas de Información, Sistemas de Información, Dic. 2018",
       },
     ],
     otherKnowledge: {
-      title: "Otros conocimientos",
+      title: "Otros Conocimientos",
       items: [
-        { item: "Figma", studying: "" },
-        { item: "Photoshop", studying: "" },
-        { item: "Illustrator", studying: "" },
-        { item: "Adobe XD", studying: "" },
-        { item: "Spark Art Studio", studying: "" },
-        { item: "Scrum Master", studying: "" },
-        { item: "Experiencia de usuario UX/UI", studying: "" },
-        { item: "Flutter", studying: otherTexts.studying },
+        "Figma",
+        "Photoshop",
+        "Illustrator",
+        "Adobe XD",
+        "Spark Art Studio",
+        "Scrum Master",
+        "Experiencia de Usuario UX/UI",
       ],
     },
   },
@@ -148,7 +145,7 @@ export const CV_INFO_ES = {
     reference: [
       {
         name: "Dahiana Ceballos",
-        jobTitle: "Communty Manager",
+        jobTitle: "Community Manager",
         phone: "3162754940",
       },
       {
@@ -159,7 +156,7 @@ export const CV_INFO_ES = {
     ],
   },
   languages: [
-    { item: "English", percentage: 90 },
-    { item: "Spanish", percentage: 90 },
+    { item: "Inglés", percentage: 50 },
+    { item: "Español", percentage: 90 },
   ],
 };

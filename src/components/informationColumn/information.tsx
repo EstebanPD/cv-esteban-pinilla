@@ -1,17 +1,25 @@
-import { EducationType, SkillsType } from "../../types/schema-app";
+import { EducationType, TSkills } from "../../types/schema-app.type";
 import ContainerGap from "./containerGap";
-import EducationCard from "./educationCard";
 import SkillsCard from "./skillsCard";
+import EducationCard from "./educationCard";
 
 type InformationProps = {
-  dataSkills: SkillsType;
+  dataSkills: TSkills;
   dataEducation: EducationType;
 };
 
 const Information = ({ dataSkills, dataEducation }: InformationProps) => {
+  const { title, technicalSkills } = dataSkills;
+
   return (
     <ContainerGap>
-      <SkillsCard data={dataSkills} />
+      <h2>{title}</h2>
+      <div>
+        {technicalSkills.items.map((skill, index) => (
+          <SkillsCard key={index} data={skill} />
+        ))}
+      </div>
+      {/* <SkillsCard data={softSkills} /> */}
       <EducationCard data={dataEducation} />
     </ContainerGap>
   );

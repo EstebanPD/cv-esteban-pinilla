@@ -2,7 +2,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faMobileScreen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ContactInformationType } from "../../types/schema-app";
+import { ContactInformationType } from "../../types/schema-app.type";
 import "./contactInformation.scss";
 
 type ContactInformationProps = {

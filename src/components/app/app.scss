@@ -107,4 +107,7 @@ $borders: 1px solid rgb(182 182 182 / 50%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border-top: $borders;
+  border-bottom: $borders;
+  padding: 0.5rem;
 }
